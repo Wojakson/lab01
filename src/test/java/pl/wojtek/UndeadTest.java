@@ -16,7 +16,6 @@ import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
 
 
-@Ignore
 @RunWith(JUnit4.class)
 public class UndeadTest {
     UndeadRepository undeadRepository;
@@ -88,11 +87,13 @@ public class UndeadTest {
         ghoul.setMana(10);
         ghoul.setName("Mag");
         ghoul.setHealth(10);
+        ghoul.setUpdated_at(null);
 
         zombie.setId(2);
         zombie.setMana(5);
         zombie.setName("Zjadacz");
         zombie.setHealth(15);
+        zombie.setUpdated_at(null);
 
         undeadRepository.add(ghoul);
         undeadRepository.add(zombie);

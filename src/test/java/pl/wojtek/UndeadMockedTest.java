@@ -151,7 +151,7 @@ public class UndeadMockedTest {
     }
 
     @Test
-    public void updateAnimalTest() throws SQLException {
+    public void updateUndeadTest() throws SQLException {
         when(updateStatement.executeUpdate()).thenReturn(1);
         Undead skeleton = new Undead();
         skeleton.setId(1);
