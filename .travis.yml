@@ -1,0 +1,8 @@
+language: java
+before_script:
+- cd scripts; ./server.sh &
+script:
+- sleep 1
+- cd ..; mvn test
+notifications:
+  email: false
